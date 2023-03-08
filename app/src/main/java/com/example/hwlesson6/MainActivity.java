@@ -3,6 +3,7 @@ package com.example.hwlesson6;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (editText1.getVisibility()==View.VISIBLE && editText2.getVisibility()==View.VISIBLE){
+                    Toast.makeText(MainActivity.this,"Попробуйте зарегестрироватся",Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(MainActivity.this,"Вы успешно зарегестрировались!",Toast.LENGTH_SHORT).show();
+                }
+
+
                 if (editText1.getVisibility()==View.GONE && editText2.getVisibility()==View.GONE){
                     btn.setVisibility(View.VISIBLE);
                     btn2.setVisibility(View.VISIBLE);
@@ -69,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     editText1.setVisibility(View.VISIBLE);
                     editText2.setVisibility(View.VISIBLE);
                 }
+
             }
         });
 
