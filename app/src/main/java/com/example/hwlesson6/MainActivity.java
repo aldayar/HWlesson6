@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btn3=findViewById(R.id.btn3);
         Button btn2= findViewById(R.id.helper);
         Button btn= findViewById(R.id.btn);
         TextView textView4= findViewById(R.id.help);
@@ -54,6 +55,23 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
             }
         });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (editText1.getVisibility()==View.GONE && editText2.getVisibility()==View.GONE){
+                    btn.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    textView.setVisibility(View.VISIBLE);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    editText1.setVisibility(View.VISIBLE);
+                    editText2.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
 
 
 
