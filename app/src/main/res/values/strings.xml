@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HWlesson6</string>
+    <string name="entering_Name">Добро пожаловать!</string>
+    <string name="string_ent">Выполните вход или зарегестрируйтесь</string>
+    <string name="emeil">Введите вашу почту </string>
+    <string name="password">Введите пароль</string>
+    <string name="enter">Войти</string>
+    <string name="forgot_password">забыли пароль?</string>
+    <string name="help_btn">помощь</string>
+
+
+
+</resources>
