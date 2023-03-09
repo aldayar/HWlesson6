@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     textView4.setVisibility(View.GONE);
                     editText1.setVisibility(View.GONE);
                     editText2.setVisibility(View.GONE);
+                    Toast.makeText(MainActivity.this,"Нажмите назад для получнении коректного ответа",Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(MainActivity.this,"Неправилный пароль или логин, нажмите {ПООМОЩЬ} если не помните пароль ",
                             Toast.LENGTH_SHORT).show();
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 if (editText1.getVisibility()==View.VISIBLE && editText2.getVisibility()==View.VISIBLE){
                     Toast.makeText(MainActivity.this,"Попробуйте зарегестрироватся",Toast.LENGTH_SHORT).show();
                 }else {
-                    Toast.makeText(MainActivity.this,"Вы успешно зарегестрировались!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Поздравляем! Вы успешно зарегестрировались!",Toast.LENGTH_SHORT).show();
                 }
 
 
